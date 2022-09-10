@@ -6,8 +6,6 @@ public class Main {
     public static class Car {
         public
         int doors;
-
-
         public Car() {
             this.doors = 0;
         }
