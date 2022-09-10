@@ -1,4 +1,4 @@
-public class Main {
+public class ejercicios3 {
     public static int sumatotal(int a , int b , int c){
         return a+b+c;
     }
