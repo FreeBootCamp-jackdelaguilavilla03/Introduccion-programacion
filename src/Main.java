@@ -16,7 +16,6 @@ public class Main {
             this.doors++;
         }
     }
-
     public static void main(String[] args) {
         int a,b,c, total;
         a = 3; b = 2; c = 1;
