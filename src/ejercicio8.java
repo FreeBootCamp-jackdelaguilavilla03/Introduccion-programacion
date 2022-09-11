@@ -1,6 +1,6 @@
 public class ejercicio8 {
     public static void main(String[] args) {
-        Persona persona1 = new Persona();
+        People persona1 = new People();
         persona1.setEdad(20);
         persona1.setNombre("Juan");
         persona1.setTelefono("123456789");
@@ -10,13 +10,13 @@ public class ejercicio8 {
     }
 }
 
-class Persona {
+class People {
     private int edad;
     private String nombre;
     private String telefono;
 
 
-    public Persona() {
+    public People() {
         this.edad = 0;
         this.nombre = "";
         this.telefono = "";
