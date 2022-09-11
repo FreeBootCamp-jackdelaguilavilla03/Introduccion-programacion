@@ -1,11 +1,20 @@
 public class practicas {
+    public static void main(String[] args) {
+        Student alumno1 = new Student();
+        alumno1.setName("Juan");
+        alumno1.setAge(21);
+        alumno1.description();
+        Teacher profesor1 = new Teacher("Luis");
+        profesor1.profile();
+        profesor1.description();
+
+    }
 }
 class Teacher implements Worker, Subject{
     private final String name;
     Teacher(String name){
         this.name = name;
     }
-    @Override
     public void description() {
         System.out.println("I am "+ name+" your new teacher");
     }
@@ -18,7 +27,6 @@ class Teacher implements Worker, Subject{
 
 class Student extends Person {
 
-    @Override
     public void description() {
         System.out.println(this.getName() + " is a student");
     }
@@ -30,36 +38,10 @@ class Student extends Person {
 }
 
 interface Worker {
-    public void description();
 }
 
 interface Subject {
-    public void profile();
-}
-
-class School {
-    public String name;
-    public String address;
-
-    School(String name, String address) {
-        this.name = name;
-        this.address = address;
-    }
-    School(){};
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setAddress(String address) {
-        this.address = address;
-    }
-    public String getAddress() {
-        return address;
-    }
-
+    void profile();
 }
 
 abstract class Person implements Subject {
@@ -83,5 +65,4 @@ abstract class Person implements Subject {
         return name;
     }
 
-    abstract public void description();
 }
